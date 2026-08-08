@@ -163,7 +163,35 @@ The application includes:
 
 ## Application Screenshots
 
-*(No screenshots are currently provided in the repository.)*
+### Dashboard
+
+The dashboard provides a high-level overview of the EV charging infrastructure dataset, including total stations, connectors, operational ratio, and regional coverage.
+
+![Dashboard](assets/dashboard.png)
+
+### Data Explorer
+
+The Data Explorer allows users to inspect the loaded dataset interactively.
+
+![Data Explorer](assets/data-explorer.png)
+
+### Statistical Analysis
+
+The Statistics section provides dynamically generated descriptive statistics and visual analysis of the loaded dataset.
+
+![Statistics](assets/statistics.png)
+
+### Optimization 1 — Charging Hub Location
+
+The first optimization uses Mixed-Integer Programming to select charging hub locations that maximize station coverage within a user-defined radius.
+
+![Optimization 1](assets/optimization-1.png)
+
+### Optimization 2 — Regional Connector Allocation
+
+The second optimization uses Mixed-Integer Linear Programming to allocate additional connectors across regions while maximizing the minimum connectors-per-station ratio.
+
+![Optimization 2](assets/optimization-2.png)
 
 ---
 
@@ -208,16 +236,20 @@ The dataset contains fields including:
 ## 11. Project Structure
 
 ```text
-Operations Research/
+ev-charging-optimization/
+│
 ├── app.py
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+│
 ├── data/
 │   └── ev_stations_2025.csv
+│
 ├── eda/
 │   ├── EDA.ipynb
 │   └── EDA_Process.md
+│
 ├── optimization/
 │   ├── optimization_1_hub_location.py
 │   ├── optimization_2_connector_allocation.py
@@ -226,9 +258,13 @@ Operations Research/
 │       ├── validation_optimization_2.py
 │       ├── optimization_1_validation_results.md
 │       └── optimization_2_validation_results.md
-└── outputs/
-    └── maps/
-        └── map_K10_R50.png
+│
+└── assets/
+    ├── dashboard.png
+    ├── data-explorer.png
+    ├── statistics.png
+    ├── optimization-1.png
+    └── optimization-2.png
 ```
 
 ---
