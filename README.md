@@ -165,11 +165,17 @@ The application includes:
 
 ## 9. Dataset
 
-**Source:** [Manual Confirmation Required: Add exact public dataset source, e.g., US DOE Alternative Fuels Data Center, Kaggle, etc.]
+**Dataset:** Global EV Charging Stations Dataset  
+**Author:** Rishee Panchal  
+**Source:** [Global EV Charging Stations Dataset — Kaggle](https://www.kaggle.com/datasets/risheepanchal/global-ev-charging-stations-dataset)  
+**Underlying Data Source:** OpenChargeMap public API  
+**Data Collection:** November 2025  
+**License:** CC0 (Public Domain)
 
-**License:** [Manual Confirmation Required: Determine dataset original license]
+The project uses the Kaggle-published **Global EV Charging Stations Dataset**, which contains observed EV charging station records collected from the OpenChargeMap public API.
 
-The sample dataset (`data/ev_stations_2025.csv`) represents observed EV charging stations with fields including:
+The dataset contains fields including:
+
 - `lat`: Latitude
 - `lon`: Longitude
 - `state`: Regional administrative identifier
