@@ -103,17 +103,21 @@ This problem is formulated using **Max-Min Mixed-Integer Linear Programming (MIL
 
 ## 6. Methodology
 
+The project follows a sequential Operations Research workflow:
+
+```text
 Dataset
-↓
-EDA
-↓
+   ↓
+Exploratory Data Analysis (EDA)
+   ↓
 Mathematical Formulation
-↓
+   ↓
 Optimization
-↓
+   ↓
 Independent Validation
-↓
+   ↓
 Interactive Streamlit UI
+```
 
 1. **Dataset**: Raw EV station records.
 2. **EDA**: Identifying patterns, biases, and missing data points.
